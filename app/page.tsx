@@ -41,6 +41,17 @@ export default function home() {
       px-4: Padding left and right for mobile responsiveness
       text-xl: makes it feel polished, but not too loud
        */}
+
+       {/* How It Works Section */}
+
+       <section className="text-center py-16 px-4">
+        <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
+        <ol className="space-y-3 text-xl">
+          <li>1️⃣ Write one thing you are grateful for</li>
+          <li>2️⃣ Optional: Add your mood, time, tag</li>
+          <li>3️⃣ Revisit your month of thankfulness</li>
+        </ol>
+       </section>
     </main>
   );
 }
