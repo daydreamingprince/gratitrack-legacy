@@ -53,6 +53,33 @@ export default function home() {
           <li>3️⃣ Revisit your month of thankfulness</li>
         </ol>
        </section>
+       {/* 
+       h3: this creates a heading for screen readers and SEO
+       ol: this is the Ordered list (logical steps = numbered flow)
+       space-y-3: this gives us clean spacing between each list item
+       text-xl: keeps things readable on all devices!
+       */}
+
+       {/* Why It Matters Section */}
+       <section className="text-center py-16 px-4">
+        <h3 className="text-2xl font-semibold mb-6">Why It Matters</h3>
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="bg-white rounded-xl shadow p-6">
+          💡<span className="block mt-2">Built to gently shift your mindset</span>
+          </div>
+          <div className="bg-white rounded-xl shadow p-6">
+          📈<span className="block mt-2">See your gratitude trends over time</span>
+          </div>
+          <div className="bg-white rounded-xl shadow p-6">
+          🔒<span className="block mt-2">Private & secure — your moments stay yours</span>
+          </div>
+        </div>
+       </section>
+       {/* 
+       grid: auto-stacks vertically on mobile, 3 columns on desktop (pretty cool ey?)
+       rounded-xl shadow p-6: This adds a modern card look with padding and shadow
+       bg-white: gives the cards contrast over the beige background color we chose
+       */}
     </main>
   );
 }
