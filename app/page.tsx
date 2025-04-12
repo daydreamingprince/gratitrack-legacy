@@ -13,13 +13,7 @@ export default function home() {
       </header>
 
       {/* This time I learned that using ctrl + / automatically makes a comment for me (this is awesome) */}
-      {/* 
-      section: semantic block to group the hero section
-      text-center py-20: centered text with generous spacing
-      h2: subheading with peaceful message
-      button: CTA with rounded corners, soothing colors, and hover effect.
-
-       */}
+      {/* Hero Section */}
       <section className="text-center py-20">
         <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
           "One line a day. One moment of peace."
@@ -28,6 +22,25 @@ export default function home() {
           Start Tracking →
         </button>
       </section>
+      {/* 
+      section: semantic block to group the hero section
+      text-center py-20: centered text with generous spacing
+      h2: subheading with peaceful message
+      button: CTA with rounded corners, soothing colors, and hover effect.
+      */}
+
+      {/* What it is Section */}
+      <section className="text-center py-16 space-y-4 px-4">
+        <p className="text-xl">🧘 A clutter-free space to log just one thing you’re grateful for.</p>
+        <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
+      </section>
+      {/* 
+      text-center: aligns text to the center
+      py-16: Padding top and bottom for breathing space
+      space-y-4: adds vertical gap between the paragraphs
+      px-4: Padding left and right for mobile responsiveness
+      text-xl: makes it feel polished, but not too loud
+       */}
     </main>
   );
 }
