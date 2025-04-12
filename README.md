@@ -37,3 +37,14 @@ _Still in active development — stay tuned for screenshots!_
 A passionate maker and student who believes that small, mindful moments can create lasting change. Gratitrack is built to serve others, promote gratitude, and offer a peaceful space online.
 
 Feel free to follow my journey and reach out anytime.
+
+---
+
+## 📄 License
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
+
+You are welcome to view, learn from, and remix this work non-commercially.  
+Please credit **Prince Grivialde** if you share it elsewhere.
+
+View full license details here: [LICENSE](./LICENSE)
