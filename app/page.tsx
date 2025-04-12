@@ -11,6 +11,23 @@ export default function home() {
         <h1 className="text-4xl font-bold">🌿 Gratitrack</h1>
         <p className="text-lg text-[#777] mt-2">"Gratitude, One Day at a Time</p>
       </header>
+
+      {/* This time I learned that using ctrl + / automatically makes a comment for me (this is awesome) */}
+      {/* 
+      section: semantic block to group the hero section
+      text-center py-20: centered text with generous spacing
+      h2: subheading with peaceful message
+      button: CTA with rounded corners, soothing colors, and hover effect.
+
+       */}
+      <section className="text-center py-20">
+        <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
+          "One line a day. One moment of peace."
+        </h2>
+        <button className="mt-8 px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition">
+          Start Tracking →
+        </button>
+      </section>
     </main>
   );
 }
