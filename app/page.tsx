@@ -31,6 +31,7 @@ export default function home() {
 
       {/* What it is Section */}
       <section className="text-center py-16 space-y-4 px-4">
+        <h3 className="text-2xl font-semibold mb-6">What It Is</h3>
         <p className="text-xl">🧘 A clutter-free space to log just one thing you’re grateful for.</p>
         <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
       </section>
