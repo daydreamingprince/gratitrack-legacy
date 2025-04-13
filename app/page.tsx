@@ -54,20 +54,21 @@ export default function home() {
       */}
 
       {/* What it is Section */}
+      {/* 
+        Here we use py-20 for consistent vertical rhythm across sections.
+        px-4 ensures that we have side padding for mobile responsiveness.
+        Instead of space-y-4 that we used before, we now manually apply mb-4 to the first paragraph for a finer control.
+      */}
       <FadeInWhenVisible>
-        <section className="text-center py-16 space-y-4 px-4">
+        <section className="text-center py-20 px-4">
           <h3 className="text-2xl font-semibold mb-6">What It Is</h3>
-          <p className="text-xl">🧘 A clutter-free space to log just one thing you’re grateful for.</p>
+          <p className="text-xl mb-4">
+            🧘 A clutter-free space to log just one thing you’re grateful for.
+          </p>
           <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
         </section>
       </FadeInWhenVisible>
-      {/* 
-      text-center: aligns text to the center
-      py-16: Padding top and bottom for breathing space
-      space-y-4: adds vertical gap between the paragraphs
-      px-4: Padding left and right for mobile responsiveness
-      text-xl: makes it feel polished, but not too loud
-       */}
+      
 
        {/* How It Works Section */}
         <FadeInWhenVisible>
