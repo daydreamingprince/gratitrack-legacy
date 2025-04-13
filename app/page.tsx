@@ -71,27 +71,23 @@ export default function home() {
       
 
        {/* How It Works Section */}
-       {/* 
-        We use consistent py-20 for the breathing space and px-4 for mobile padding.
-        Ordered list uses space-y-3 to keep consistent spacing between steps.
-        The fade-in effect is handled by FadeInWhenVisible.
-      */}
+       {/* we use visually distinct steps with clear spacing and layout, especially for our mobile users! */}
         <FadeInWhenVisible>
         <section className="text-center py-20 px-4">
           <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
-          <ol className="text-xl space-y-3">
-            <li>1️⃣ Write one thing you are grateful for</li>
-            <li>2️⃣ Optional: Add your mood, time, tag</li>
-            <li>3️⃣ Revisit your month of thankfulness</li>
-          </ol>
+          <div className="space-y-6 text-left max-w-md mx-auto text-lg">
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <span className="font-semibold">1️⃣ Write one thing you are grateful for</span>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <span className="font-semibold">2️⃣ Optional: Add your mood, time, and tag</span>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <span className="font-semibold">3️⃣ Revisit your month of thankfulness</span>
+            </div>
+          </div>
         </section>
        </FadeInWhenVisible>
-       {/* 
-       h3: this creates a heading for screen readers and SEO
-       ol: this is the Ordered list (logical steps = numbered flow)
-       space-y-3: this gives us clean spacing between each list item
-       text-xl: keeps things readable on all devices!
-       */}
 
        {/* Why It Matters Section */}
        <FadeInWhenVisible>
