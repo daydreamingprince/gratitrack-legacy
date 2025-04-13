@@ -71,10 +71,15 @@ export default function home() {
       
 
        {/* How It Works Section */}
+       {/* 
+        We use consistent py-20 for the breathing space and px-4 for mobile padding.
+        Ordered list uses space-y-3 to keep consistent spacing between steps.
+        The fade-in effect is handled by FadeInWhenVisible.
+      */}
         <FadeInWhenVisible>
-        <section className="text-center py-16 px-4">
+        <section className="text-center py-20 px-4">
           <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
-          <ol className="space-y-3 text-xl">
+          <ol className="text-xl space-y-3">
             <li>1️⃣ Write one thing you are grateful for</li>
             <li>2️⃣ Optional: Add your mood, time, tag</li>
             <li>3️⃣ Revisit your month of thankfulness</li>
