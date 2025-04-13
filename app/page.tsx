@@ -24,7 +24,7 @@ export default function home() {
         'mt-2' Adds space above this paragraph
         */}
         <p className="text-base md:text-lg text-[#777] mt-2">
-          "Gratitude, One Day at a Time
+          "Gratitude, One Day at a Time"
         </p>
       </header>
 
