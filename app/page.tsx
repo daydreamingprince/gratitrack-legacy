@@ -29,6 +29,11 @@ export default function home() {
 
       {/* This time I learned that using ctrl + / automatically makes a comment for me (this is awesome) */}
       {/* Hero Section */}
+      {/* 
+        FadeInWhenVisible:
+        This is a wrapper that uses Framer Motion and useInView to animate the sections when it enters the viewport. 
+        we're using the 'once: true' to keep it peaceful so the section fades in once and does not repeat when the user scrolls up again and back down again if that makes sense.
+      */}
       <FadeInWhenVisible>
         <section className="text-center py-20">
           <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
