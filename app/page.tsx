@@ -1,3 +1,5 @@
+import FadeInWhenVisible from "@/components/FadeInWhenVisible";
+
 export default function home() {
   return (
     // this wraps the whole page, it sets the soft beige background and base text color
@@ -8,20 +10,35 @@ export default function home() {
 
     <main className="min-h-screen bg-[#F9F9F6] text-[#333] p-8">
       <header className="text-center py-16">
-        <h1 className="text-4xl font-bold">🌿 Gratitrack</h1>
-        <p className="text-lg text-[#777] mt-2">"Gratitude, One Day at a Time</p>
+        {/* 
+        the 'text-4xl' is the default font size on small/mobile screens)
+        the 'md:text-5xl' increases the font size to 5xl when on medium+ screens like tablets and desktops.
+        'font-bold' makes the text bold, it emphasizes our brand <3
+        */}
+        <h1 className="text-4xl md:text-5xl font-bold">🌿 Gratitrack</h1>
+        {/* 
+        'text-base' would be the normal size for mobile
+        'md:text-lg' sets the text size slightly larger on medium+ screens
+        'text-[#777]' sets a soft gray color to the text
+        'mt-2' Adds space above this paragraph
+        */}
+        <p className="text-base md:text-lg text-[#777] mt-2">
+          "Gratitude, One Day at a Time
+        </p>
       </header>
 
       {/* This time I learned that using ctrl + / automatically makes a comment for me (this is awesome) */}
       {/* Hero Section */}
-      <section className="text-center py-20">
-        <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
-          "One line a day. One moment of peace."
-        </h2>
-        <button className="mt-8 px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition">
-          Start Tracking →
-        </button>
-      </section>
+      <FadeInWhenVisible>
+        <section className="text-center py-20">
+          <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
+            "One line a day. One moment of peace."
+          </h2>
+          <button className="mt-8 px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-base md:text-lg transition duration-300">
+            Start Tracking →
+          </button>
+        </section>
+      </FadeInWhenVisible>
       {/* 
       section: semantic block to group the hero section
       text-center py-20: centered text with generous spacing
@@ -30,11 +47,13 @@ export default function home() {
       */}
 
       {/* What it is Section */}
-      <section className="text-center py-16 space-y-4 px-4">
-        <h3 className="text-2xl font-semibold mb-6">What It Is</h3>
-        <p className="text-xl">🧘 A clutter-free space to log just one thing you’re grateful for.</p>
-        <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
-      </section>
+      <FadeInWhenVisible>
+        <section className="text-center py-16 space-y-4 px-4">
+          <h3 className="text-2xl font-semibold mb-6">What It Is</h3>
+          <p className="text-xl">🧘 A clutter-free space to log just one thing you’re grateful for.</p>
+          <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
+        </section>
+      </FadeInWhenVisible>
       {/* 
       text-center: aligns text to the center
       py-16: Padding top and bottom for breathing space
@@ -44,15 +63,16 @@ export default function home() {
        */}
 
        {/* How It Works Section */}
-
-       <section className="text-center py-16 px-4">
-        <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
-        <ol className="space-y-3 text-xl">
-          <li>1️⃣ Write one thing you are grateful for</li>
-          <li>2️⃣ Optional: Add your mood, time, tag</li>
-          <li>3️⃣ Revisit your month of thankfulness</li>
-        </ol>
-       </section>
+        <FadeInWhenVisible>
+        <section className="text-center py-16 px-4">
+          <h3 className="text-2xl font-semibold mb-6">How It Works</h3>
+          <ol className="space-y-3 text-xl">
+            <li>1️⃣ Write one thing you are grateful for</li>
+            <li>2️⃣ Optional: Add your mood, time, tag</li>
+            <li>3️⃣ Revisit your month of thankfulness</li>
+          </ol>
+        </section>
+       </FadeInWhenVisible>
        {/* 
        h3: this creates a heading for screen readers and SEO
        ol: this is the Ordered list (logical steps = numbered flow)
@@ -61,20 +81,22 @@ export default function home() {
        */}
 
        {/* Why It Matters Section */}
-       <section className="text-center py-16 px-4">
-        <h3 className="text-2xl font-semibold mb-6">Why It Matters</h3>
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="bg-white rounded-xl shadow p-6">
-          💡<span className="block mt-2">Built to gently shift your mindset</span>
+       <FadeInWhenVisible>
+        <section className="text-center py-16 px-4">
+          <h3 className="text-2xl font-semibold mb-6">Why It Matters</h3>
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="bg-white rounded-xl shadow p-6">
+            💡<span className="block mt-2">Built to gently shift your mindset</span>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+            📈<span className="block mt-2">See your gratitude trends over time</span>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+            🔒<span className="block mt-2">Private & secure — your moments stay yours</span>
+            </div>
           </div>
-          <div className="bg-white rounded-xl shadow p-6">
-          📈<span className="block mt-2">See your gratitude trends over time</span>
-          </div>
-          <div className="bg-white rounded-xl shadow p-6">
-          🔒<span className="block mt-2">Private & secure — your moments stay yours</span>
-          </div>
-        </div>
-       </section>
+        </section>
+       </FadeInWhenVisible>
        {/* 
        grid: auto-stacks vertically on mobile, 3 columns on desktop (pretty cool ey?)
        rounded-xl shadow p-6: This adds a modern card look with padding and shadow
@@ -82,14 +104,16 @@ export default function home() {
        */}
 
        {/* Join Section */}
-       <section className="text-center py-20 px-4">
-        <h3 className="text-2xl font-semibold mb-6">
-          🌟 Create your free Gratitrack space today
-        </h3>
-        <button className="px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition">
-          Get Started →
-        </button>
-       </section>
+       <FadeInWhenVisible>
+        <section className="text-center py-20 px-4">
+          <h3 className="text-2xl font-semibold mb-6">
+            🌟 Create your free Gratitrack space today
+          </h3>
+          <button className="px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition duration-300">
+            Get Started →
+          </button>
+        </section>
+       </FadeInWhenVisible>
        {/* 
        text-center py-20 : this gives us the Balanced whitespace, a breathing room before the footer
        rounded-full : this allows us to have the friendly, soft visual style (let's say trust-building)
