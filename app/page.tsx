@@ -154,7 +154,8 @@ export default function home() {
 
        {/* Footer Section */}
        <footer className="text-center text-sm text-[#777] py-10">
-        Made with purpose. Persist with Purpose 🌱
+        <p>Made with purpose. Persist with Purpose 🌱</p>
+        <p className="mt-2">&copy; 2025 daydreamingprince. All rights reserved.</p>
        </footer>
     </main>
   );
