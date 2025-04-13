@@ -11,12 +11,12 @@ export default function home() {
 
     <main className="min-h-screen bg-[#F9F9F6] text-[#333] p-8">
       <header className="text-center py-16">
-        {/* 
-        the 'text-4xl' is the default font size on small/mobile screens)
-        the 'md:text-5xl' increases the font size to 5xl when on medium+ screens like tablets and desktops.
-        'font-bold' makes the text bold, it emphasizes our brand <3
-        */}
-        <h1 className="text-4xl md:text-5xl font-bold">🌿 Gratitrack</h1>
+        <img
+          src="/logo.png"
+          alt="Gratitrack logo"
+          className="mx-auto mb-4 w-20 h-20"
+        />
+        <h1 className="text-4xl md:text-5xl font-bold">Gratitrack</h1>
         {/* 
         'text-base' would be the normal size for mobile
         'md:text-lg' sets the text size slightly larger on medium+ screens
