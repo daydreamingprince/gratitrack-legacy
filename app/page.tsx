@@ -95,7 +95,7 @@ export default function home() {
 
        {/* Why It Matters Section */}
        <FadeInWhenVisible>
-        <section className="text-center py-16 px-4">
+        <section className="text-center py-20 px-4">
           <h3 className="text-2xl font-semibold mb-6">Why It Matters</h3>
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white rounded-xl shadow p-6">
