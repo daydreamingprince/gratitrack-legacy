@@ -1,4 +1,5 @@
 import FadeInWhenVisible from "@/components/FadeInWhenVisible";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function home() {
   return (
@@ -141,6 +142,8 @@ export default function home() {
           </button>
         </section>
        </FadeInWhenVisible>
+
+       <ScrollToTop />
        {/* 
        text-center py-20 : this gives us the Balanced whitespace, a breathing room before the footer
        rounded-full : this allows us to have the friendly, soft visual style (let's say trust-building)
