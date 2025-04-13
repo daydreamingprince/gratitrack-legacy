@@ -80,6 +80,23 @@ export default function home() {
        rounded-xl shadow p-6: This adds a modern card look with padding and shadow
        bg-white: gives the cards contrast over the beige background color we chose
        */}
+
+       {/* Join Section */}
+       <section className="text-center py-20 px-4">
+        <h3 className="text-2xl font-semibold mb-6">
+          🌟 Create your free Gratitrack space today
+        </h3>
+        <button className="px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition">
+          Get Started →
+        </button>
+       </section>
+       {/* 
+       text-center py-20 : this gives us the Balanced whitespace, a breathing room before the footer
+       rounded-full : this allows us to have the friendly, soft visual style (let's say trust-building)
+       hover:bg-[3B7D8B3] : this adds life with a hover transition
+       text-white text-lg : Clean readability for the Call to Action button!
+       */}
+       {/* after this we'll add a /track route later to the CTA button */}
     </main>
   );
 }
