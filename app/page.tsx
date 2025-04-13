@@ -60,7 +60,7 @@ export default function home() {
         Instead of space-y-4 that we used before, we now manually apply mb-4 to the first paragraph for a finer control.
       */}
       <FadeInWhenVisible>
-        <section className="text-center py-20 px-4">
+        <section className="text-center py-20 md:py-40 px-4 bg-[#F5F5F2]">
           <h3 className="text-2xl font-semibold mb-6">What It Is</h3>
           <p className="text-xl mb-4">
             🧘 A clutter-free space to log just one thing you’re grateful for.
