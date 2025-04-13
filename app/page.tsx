@@ -35,7 +35,9 @@ export default function home() {
         we're using the 'once: true' to keep it peaceful so the section fades in once and does not repeat when the user scrolls up again and back down again if that makes sense.
       */}
       <FadeInWhenVisible>
-        <section className="text-center py-20">
+        {/* py-20 gives a tall, breathable vertical spacing on both top and bottom */}
+        {/* px-4 helps prevent the texts from touching screen edges on mobile */}
+        <section className="text-center py-20 px-4">
           <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
             "One line a day. One moment of peace."
           </h2>
@@ -126,6 +128,12 @@ export default function home() {
        text-white text-lg : Clean readability for the Call to Action button!
        */}
        {/* after this we'll add a /track route later to the CTA button */}
+
+       <FadeInWhenVisible>
+        <section className="text-center py-16 px-6 bg-[F5F5F2]">
+          <h3 className="text-2xl font-semibold mb-4">Why Gratitrack?</h3>
+        </section>
+       </FadeInWhenVisible>
 
        {/* Footer Section */}
        <footer className="text-center text-sm text-[#777] py-10">
