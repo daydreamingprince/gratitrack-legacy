@@ -116,6 +116,24 @@ export default function home() {
        bg-white: gives the cards contrast over the beige background color we chose
        */}
 
+        {/* 
+          Why Gratitrack Section:
+          A calm, but informational bridge that gives a deeper insight without breaking the minimalism vibe that I am aiming for.
+          Here I opt to use a soft off-white bg to separate it visually from the other sections.
+        */}
+       <FadeInWhenVisible>
+        <section className="text-center py-20 px-6 bg-[#F5F5F2]">
+          <h3 className="text-2xl font-semibold mb-6">Why Gratitrack?</h3>
+          <p className="text-lg max-w-2xl mx-auto">
+            Gratitrack isn't about toxic positivity—it's about slowing down and noticing the small, meaningful things.
+            This practice has been shown to reduce anxiety, improve mood, and help people live more present lives.
+          </p>
+          <p className="text-lg max-w-2xl mx-auto mt-6">
+            Whether you write daily or reflect weekly, Gratitrack meets you where you are—quietly, gently, and without judgement.
+          </p>
+        </section>
+       </FadeInWhenVisible>
+
        {/* Join Section */}
        <FadeInWhenVisible>
         <section className="text-center py-20 px-4">
@@ -134,12 +152,6 @@ export default function home() {
        text-white text-lg : Clean readability for the Call to Action button!
        */}
        {/* after this we'll add a /track route later to the CTA button */}
-
-       <FadeInWhenVisible>
-        <section className="text-center py-16 px-6 bg-[F5F5F2]">
-          <h3 className="text-2xl font-semibold mb-4">Why Gratitrack?</h3>
-        </section>
-       </FadeInWhenVisible>
 
        {/* Footer Section */}
        <footer className="text-center text-sm text-[#777] py-10">
