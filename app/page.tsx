@@ -97,6 +97,11 @@ export default function home() {
        text-white text-lg : Clean readability for the Call to Action button!
        */}
        {/* after this we'll add a /track route later to the CTA button */}
+
+       {/* Footer Section */}
+       <footer className="text-center text-sm text-[#777] py-10">
+        Made with purpose. Persist with Purpose 🌱
+       </footer>
     </main>
   );
 }
