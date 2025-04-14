@@ -67,9 +67,17 @@ export default function home() {
       <FadeInWhenVisible>
         <section className="text-center py-20 md:py-40 px-4 bg-[#F5F5F2]">
           <h3 className="text-2xl font-semibold mb-6">What It Is</h3>
-          <p className="text-xl mb-4">
-            🧘 A clutter-free space to log just one thing you’re grateful for.
-          </p>
+          
+          <div className="flex flex-col items-center space-y-4">
+            <img 
+              src="/icons/reflection.png"
+              alt="Reflection icon"
+              className="w-12 h-12 mx-auto"
+            />
+            <p className="text-xl mb-4">
+              A clutter-free space to log just one thing you’re grateful for.
+            </p>
+          </div>
           <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
         </section>
       </FadeInWhenVisible>
