@@ -22,12 +22,16 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={ScrollToTop}
-      className={`fixed bottom-6 right-6 z-50 rounded-full bg-[#A3C9A8] text-white p-3 text-xl shadow-md transition-opacity duration-300 ${
+      aria-label="Scroll to top"
+      className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] transition-opacity shadow-md flex items-center justify-center ${
         visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
-      aria-label="Scroll to top"
     >
-      ⬆️
+      <img
+        src="/icons/scroll-up.png"
+        alt="Scroll to top"
+        className="w-full h-full object-contain"
+      />
     </button>
   )
 }

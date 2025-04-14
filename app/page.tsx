@@ -182,7 +182,7 @@ export default function home() {
           <p>Made with purpose. Persist with Purpose 🌱</p>
           <p className="mt-2">&copy; 2025 daydreamingprince. All rights reserved.</p>
           {/* Versioning!! I feel like this is too cool LoL */}
-          <p className="mt-2 text-xs text-[#aaa]">v0.2.0</p>
+          <p className="mt-2 text-xs text-[#aaa]">v0.2.1</p>
         </div>
        </footer>
     </main>
