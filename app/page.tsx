@@ -177,9 +177,16 @@ export default function home() {
        {/* after this we'll add a /track route later to the CTA button */}
 
        {/* Footer Section */}
-       <footer className="text-center text-sm text-[#777] py-10">
-        <p>Made with purpose. Persist with Purpose 🌱</p>
-        <p className="mt-2">&copy; 2025 daydreamingprince. All rights reserved.</p>
+       <footer className="relative py-10 px-4 text-sm text-[#777]">
+        <div className="text-center">
+          <p>Made with purpose. Persist with Purpose 🌱</p>
+          <p className="mt-2">&copy; 2025 daydreamingprince. All rights reserved.</p>
+        </div>
+
+        {/* Versioning!! I feel like this is too cool LoL */}
+        <span className="absolute bottom-2 right-4 text-xs text-[#aaa]">
+          v0.2.0
+        </span>
        </footer>
     </main>
   );
