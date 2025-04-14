@@ -1,5 +1,6 @@
 import FadeInWhenVisible from "@/components/FadeInWhenVisible";
 import ScrollToTop from "@/components/ScrollToTop";
+import Link from "next/link";
 
 export default function home() {
   return (
@@ -42,9 +43,12 @@ export default function home() {
           <h2 className="text-2xl md:text-3xl font-medium text-[#333]">
             "One line a day. One moment of peace."
           </h2>
-          <button className="mt-8 px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-base md:text-lg transition duration-300">
-            Start Tracking →
-          </button>
+          
+          <Link href="/track">
+            <button className="mt-8 px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-base md:text-lg transition duration-300">
+              Start Tracking →
+            </button>
+          </Link>
         </section>
       </FadeInWhenVisible>
       {/* 
@@ -137,9 +141,11 @@ export default function home() {
           <h3 className="text-2xl font-semibold mb-6">
             🌟 Create your free Gratitrack space today
           </h3>
-          <button className="px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition duration-300">
-            Get Started →
-          </button>
+          <Link href="/track">
+            <button className="px-6 py-3 rounded-full bg-[#A3C9A8] hover:bg-[#B7D8B3] text-white text-lg transition duration-300">
+              Get Started →
+            </button>
+          </Link>
         </section>
        </FadeInWhenVisible>
 
