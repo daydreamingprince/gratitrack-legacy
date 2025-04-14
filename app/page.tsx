@@ -78,7 +78,17 @@ export default function home() {
               A clutter-free space to log just one thing you’re grateful for.
             </p>
           </div>
-          <p className="text-xl">🌀 Calm interface. No social feed. Just you and the present.</p>
+
+          <div className="flex flex-col items-center space-y-4">
+          <img 
+              src="/icons/present.png"
+              alt="Reflection icon"
+              className="w-12 h-12 mx-auto"
+            />
+            <p className="text-xl">
+              Calm interface. No social feed. Just you and the present.
+            </p>
+          </div>
         </section>
       </FadeInWhenVisible>
       
