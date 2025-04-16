@@ -10,6 +10,9 @@ const config: Config = {
       animation: {
         'fade-in': 'fadeIn 1s ease-out forwards',
       },
+      fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
+      },
       keyframes: {
         fadeIn: {
           '0%' : { opacity: 0 },

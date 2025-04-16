@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets:['latin'], display: 'swap'});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,7 +54,7 @@ export default function RootLayout({
         <link rel="icon" href="/app/favicon.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nunito.className} bg-white text-gray-800 antialiased`}
       >
         {children}
       </body>
