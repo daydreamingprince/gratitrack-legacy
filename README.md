@@ -1,3 +1,8 @@
+> ⚠️ This version of Gratitrack is no longer maintained.  
+> We are rebuilding Gratitrack from scratch with better structure and clearer purpose.
+> Follow the new project here: [gratitrack](https://github.com/daydreamingprince/gratitrack) (coming soon!)
+
+
 # 🌿 Gratitrack
 
 **Gratitude, One Day at a Time.**  
